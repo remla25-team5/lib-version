@@ -31,8 +31,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release_branches: '.*'
           pre_release_branches: 'NONE'
-          default_bump: ${{ inputs.bump_level }}
-          tag_prefix: v
+          default_bump: patch
+          tag_prefix: v 
 
       - name: Set up Python
         uses: actions/setup-python@v4
