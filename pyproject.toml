@@ -8,3 +8,4 @@ name = "lib-version"
 dynamic = ["version"]
 
 [tool.setuptools_scm]
+tag_regex = "^(?P<version>v[0-9]+(?:\\.[0-9]+)*[^\\s]*?)$"
